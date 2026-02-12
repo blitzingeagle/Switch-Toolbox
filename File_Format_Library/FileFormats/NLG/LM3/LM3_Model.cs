@@ -40,7 +40,7 @@ namespace FirstPlugin.LuigisMansion3
             FolderSelectDialog folderDlg = new FolderSelectDialog();
             if (folderDlg.ShowDialog() == DialogResult.OK)
             {
-                ExportModelSettings exportDlg = new ExportModelSettings();
+                ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                 if (exportDlg.ShowDialog() == DialogResult.OK)
                     ExportModel(folderDlg.SelectedPath, exportDlg.Settings);
             }
@@ -169,7 +169,7 @@ namespace FirstPlugin.LuigisMansion3
             sfd.Filter = "Supported Formats|*.dae;";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                ExportModelSettings exportDlg = new ExportModelSettings();
+                ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                 if (exportDlg.ShowDialog() == DialogResult.OK)
                     ExportModel(sfd.FileName, exportDlg.Settings);
             }

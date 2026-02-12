@@ -211,7 +211,7 @@ namespace FirstPlugin
                 }
                 else
                 {
-                    ExportModelSettings exportDlg = new ExportModelSettings();
+                    ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                     if (exportDlg.ShowDialog() == DialogResult.OK)
                         ExportModel(sfd.FileName, exportDlg.Settings);
                 }

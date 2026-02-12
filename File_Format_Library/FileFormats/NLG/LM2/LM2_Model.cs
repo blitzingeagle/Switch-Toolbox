@@ -55,7 +55,7 @@ namespace FirstPlugin.LuigisMansion.DarkMoon
             model.Materials = Materials;
             model.Objects = DataDictionary.Renderer.Meshes;
 
-            ExportModelSettings settings = new ExportModelSettings();
+            ExportColladaModelSettings settings = new ExportColladaModelSettings();
             if (settings.ShowDialog() == DialogResult.OK)
                 DAE.Export(FileName, settings.Settings, model, new List<STGenericTexture>());
         }
@@ -120,7 +120,7 @@ namespace FirstPlugin.LuigisMansion.DarkMoon
             sfd.Filter = "Supported Formats|*.dae;";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                ExportModelSettings exportDlg = new ExportModelSettings();
+                ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                 if (exportDlg.ShowDialog() == DialogResult.OK)
                     ExportModel(sfd.FileName, exportDlg.Settings);
             }

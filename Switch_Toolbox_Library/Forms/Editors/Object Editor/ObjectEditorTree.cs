@@ -555,7 +555,7 @@ namespace Toolbox.Library.Forms
                 sfd.Filter = "Supported Formats|*.dae;";
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    ExportModelSettings exportDlg = new ExportModelSettings();
+                    ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                     if (exportDlg.ShowDialog() == DialogResult.OK)
                         ExportModel(node, sfd.FileName, exportDlg.Settings);
                 }

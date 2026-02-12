@@ -362,7 +362,7 @@ namespace FirstPlugin
                 model.Materials = materials;
                 model.Objects = Renderer.Meshes;
 
-                ExportModelSettings exportDlg = new ExportModelSettings();
+                ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                 if (exportDlg.ShowDialog() == DialogResult.OK)
                     DAE.Export(sfd.FileName, exportDlg.Settings, model, textures, Skeleton);
             }

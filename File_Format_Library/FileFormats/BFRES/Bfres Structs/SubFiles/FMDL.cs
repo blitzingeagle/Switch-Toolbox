@@ -554,9 +554,13 @@ namespace Bfres.Structs
                 case ".obj":
                     OBJ.ExportModel(FileName, this, GetTextures());
                     break;
+                case ".gltf":
+                    GLTF.ExportSettings exportSettings = new GLTF.ExportSettings();  // TODO: Determine settings via dialog
+                    GLTF.Export(FileName, exportSettings, this, GetTextures(), Skeleton, Skeleton.Node_Array.ToList());
+                    break;
                 default:
 
-                    ExportModelSettings settings = new ExportModelSettings();
+                    ExportColladaModelSettings settings = new ExportColladaModelSettings();
                     // Toggle colors when necessary as we export them by force 
                     if (Model != null)
                         settings.Settings.UseVertexColors = Model.VertexBuffers.Any(

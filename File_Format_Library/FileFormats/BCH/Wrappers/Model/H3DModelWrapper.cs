@@ -31,7 +31,7 @@ namespace FirstPlugin.CtrLibrary
             switch (ext)
             {
                 case ".dae":
-                    ExportModelSettings exportDlg = new ExportModelSettings();
+                    ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                     if (exportDlg.ShowDialog() == DialogResult.OK)
                         ExportModel(FileName, exportDlg.Settings);
                     break;

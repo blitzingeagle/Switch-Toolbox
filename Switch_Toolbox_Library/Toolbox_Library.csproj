@@ -68,9 +68,8 @@
     <Reference Include="Gl_EditorFramework">
       <HintPath>..\Toolbox\Gl_EditorFramework.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=1.1.0.145, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpZipLib.1.1.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.1.0.0, Culture=neutral, PublicKeyToken=27d14aecb5186925, processorArchitecture=MSIL">
       <HintPath>..\Toolbox\Lib\K4os.Compression.LZ4.dll</HintPath>
@@ -91,6 +90,9 @@
     <Reference Include="LZ4.Frame">
       <HintPath>..\Toolbox\Lib\LZ4.Frame.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.1\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
@@ -147,6 +149,15 @@
       <HintPath>..\Toolbox\Lib\SFGraphics.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SharpGLTF.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6f8b67557d279fe6, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpGLTF.Core.1.0.6\lib\netstandard2.0\SharpGLTF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGLTF.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6f8b67557d279fe6, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpGLTF.Runtime.1.0.6\lib\netstandard2.0\SharpGLTF.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGLTF.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6f8b67557d279fe6, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpGLTF.Toolkit.1.0.6\lib\netstandard2.0\SharpGLTF.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Syroot.BinaryData">
       <HintPath>..\Toolbox\Lib\Syroot.BinaryData.dll</HintPath>
       <Private>False</Private>
@@ -157,21 +168,35 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Pipelines, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.10.0.1\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="System.Text.Encodings.Web, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.10.0.1\lib\net462\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="System.Text.Json, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.10.0.1\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
@@ -263,6 +288,8 @@
     <Compile Include="FileFormats\Assimp\AssimpSaver.cs" />
     <Compile Include="FileFormats\DAE\ColladaWriter.cs" />
     <Compile Include="FileFormats\DDS\RGBAPixelDecoder.cs" />
+    <Compile Include="FileFormats\GLTF\GLTF.cs" />
+    <Compile Include="FileFormats\GLTF\GLTFBuilder.cs" />
     <Compile Include="FileSystem\VirtualFileTreeNode.cs" />
     <Compile Include="FileSystem\VirtualTreeNode.cs" />
     <Compile Include="Forms\Animation\Rewrite\AnimationPanel.cs">
@@ -495,11 +522,11 @@
     <Compile Include="Forms\BatchFormatExport.Designer.cs">
       <DependentUpon>BatchFormatExport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Dialogs\ExportModelSettings.cs">
+    <Compile Include="Forms\Dialogs\ExportColladaModelSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dialogs\ExportModelSettings.Designer.cs">
-      <DependentUpon>ExportModelSettings.cs</DependentUpon>
+    <Compile Include="Forms\Dialogs\ExportColladaModelSettings.Designer.cs">
+      <DependentUpon>ExportColladaModelSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dialogs\STSaveLogDialog.cs">
       <SubType>Form</SubType>
@@ -1044,8 +1071,8 @@
     <EmbeddedResource Include="Forms\Dialogs\ColorSelectorDropdown.resx">
       <DependentUpon>ColorSelectorDropdown.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Dialogs\ExportModelSettings.resx">
-      <DependentUpon>ExportModelSettings.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Dialogs\ExportColladaModelSettings.resx">
+      <DependentUpon>ExportColladaModelSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialogs\LzmaSettingsForm.resx">
       <DependentUpon>LzmaSettingsForm.cs</DependentUpon>
@@ -1561,7 +1588,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\AssimpNet.4.1.0\build\AssimpNet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AssimpNet.4.1.0\build\AssimpNet.targets'))" />
     <Error Condition="!Exists('..\packages\DirectXTexNet.1.0.0-rc3\build\DirectXTexNet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\DirectXTexNet.1.0.0-rc3\build\DirectXTexNet.targets'))" />
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
   </Target>
   <Import Project="..\packages\AssimpNet.4.1.0\build\AssimpNet.targets" Condition="Exists('..\packages\AssimpNet.4.1.0\build\AssimpNet.targets')" />
   <Import Project="..\packages\DirectXTexNet.1.0.0-rc3\build\DirectXTexNet.targets" Condition="Exists('..\packages\DirectXTexNet.1.0.0-rc3\build\DirectXTexNet.targets')" />
+  <Import Project="..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
 </Project>

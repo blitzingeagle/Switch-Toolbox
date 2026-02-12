@@ -100,7 +100,7 @@ namespace FirstPlugin
                         model.Unload();
                     }
 
-                    ExportModelSettings settings = new ExportModelSettings();
+                    ExportColladaModelSettings settings = new ExportColladaModelSettings();
                     if (settings.ShowDialog() == DialogResult.OK)
                         DAE.Export(sfd.FileName, settings.Settings, Objects, Materials, new List<STGenericTexture>(), Skeleton);
                 }
@@ -155,7 +155,7 @@ namespace FirstPlugin
             sfd.Filter = "Supported Formats|*.dae;";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                ExportModelSettings exportDlg = new ExportModelSettings();
+                ExportColladaModelSettings exportDlg = new ExportColladaModelSettings();
                 if (exportDlg.ShowDialog() == DialogResult.OK)
                     ExportModel(sfd.FileName, exportDlg.Settings);
             }
